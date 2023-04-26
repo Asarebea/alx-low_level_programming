@@ -9,36 +9,36 @@
 int main(void)
 {
 	unsigned long int u;
-	unsigned long int before = 1;
-	unsigned long after = 2;
-	unsigned long int j = 1000000000;
-	unsigned long int before1;
-	unsigned long int before2;
-	unsigned long int after1;
-	unsigned long int after2;
+	unsigned long int bef = 1;
+	unsigned long aft = 2;
+	unsigned long int l = 1000000000;
+	unsigned long int bef1;
+	unsigned long int bef2;
+	unsigned long int aft1;
+	unsigned long int aft2;
 
-	printf("%lu", before);
+	printf("%lu", bef);
 
 	for (u = 1; u < 91; u++)
 	{
-	printf(", %lu", after);
-	after += before;
-	before = after - before;
+	printf(", %lu", aft);
+	aft += bef;
+	bef = aft - bef;
 	}
 
-	before1 = (before / j);
-	before2 = (before % j);
-	after1 = (after / j);
-	after2 = (after / j);
+	bef1 = (bef / l);
+	bef2 = (bef % l);
+	aft1 = (aft / l);
+	aft2 = (aft / l);
 
 	for (u = 92; u < 99; ++u)
 	{
-	printf(", %lu", after1 + (after2 / j));
-	printf("%lu', after2 % j);
-	after1 = after1 + before1;
-	before1 = after1 - before1;
-	after2 = after2 + before2;
-	before2 = after2 - before2;
+	printf(", %lu", aft1 + (aft2 / l));
+	printf("%lu', aft2 % l);
+	aft1 = aft1 + bef1;
+	bef1 = aft1 - bef1;
+	aft2 = after2 + bef2;
+	bef2 = aft2 - bef2;
 	}
 	printf("\n");
 	return (0);
