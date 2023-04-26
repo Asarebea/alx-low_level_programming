@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long int u;
+	unsigned long int p;
 	unsigned long int bef = 1;
 	unsigned long int aft = 2;
 	unsigned long int l = 1000000000;
@@ -19,7 +19,7 @@ int main(void)
 
 	printf("%lu", bef);
 
-	for (u = 1; u < 91; u++)
+	for (p = 1; p < 91; p++)
 	{
 	printf(", %lu", aft);
 	aft += bef;
@@ -31,7 +31,7 @@ int main(void)
 	aft1 = (aft / l);
 	aft2 = (aft / l);
 
-	for (u = 92; u < 99; ++u)
+	for (p = 92; p < 99; ++p)
 	{
 	printf(", %lu", aft1 + (aft2 / l));
 	printf("%lu', aft2 % l);
