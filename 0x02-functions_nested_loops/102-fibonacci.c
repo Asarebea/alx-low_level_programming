@@ -9,15 +9,15 @@
 int main(void)
 {
 	int f;
-	unsigned long qn1 = 0, qn2 = 1, sum;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
 	for (f = 0; f < 50; f++)
 	{
-	sum = qn1 + gn2;
+	sum = fib1 + fib2;
 	printf("%lu", sum);
 
-	qn1 = qn2;
-	qn2 = sum;
+	fib1 = fib2;
+	fib2 = sum;
 
 	if (f == 49)
 	printf("\n");
