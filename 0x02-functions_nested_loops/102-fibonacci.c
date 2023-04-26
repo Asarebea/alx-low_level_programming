@@ -22,7 +22,7 @@ int main(void)
 	if (f == 49)
 	printf("\n");
 	else
-	printf(",");
+	printf(", ");
 	}
 	return (0);
 }
