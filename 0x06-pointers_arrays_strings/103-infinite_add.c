@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
 * infinite_add - Entry point
 * Description - adding two numbers
@@ -24,7 +25,7 @@ if (size_r <= bg + 1)
 return (0);
 r[bg + 1] = '\0';
 y1--, y2--, size_r--;
-dr1 = *(n1 + y1) - 48, dr2 = *(n2 + y2) - 48;
+dr1 = *(n1 + y1) -48, dr2 = *(n2 + y2) -48;
 while (bg >= 0)
 {
 op = dr1 + dr2 + add;
@@ -37,11 +38,11 @@ if (op > 0)
 else
 *(r + bg) = '0';
 if (y1 > 0)
-y1--, dr1 = *(n1 + y1) - 48;
+y1--, dr1 = *(n1 + y1) -48;
 else
 dr1 = 0;
 if (y2 > 0)
-y2--, dr2 = *(n2 + y2) - 48;
+y2--, dr2 = *(n2 + y2) -48;
 else
 dr2 = 0;
 bg--, size_r--;
