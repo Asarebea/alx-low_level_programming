@@ -9,7 +9,7 @@
   * or 0 if its not in the character (success)
   */
 
-char char *_strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	int k;
 
