@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-  * _print_rev_recursion - function that prints a string follwed by a new line
+  * _print_rev_recursion - function that reverses
+  * a string follwed by a new line
   * @s: string to be inputed
-  * Return: nothing
+  * Return: void
   */
 
 void _print_rev_recursion(char *s)
