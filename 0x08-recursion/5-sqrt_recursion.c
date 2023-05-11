@@ -1,25 +1,28 @@
 #include "main.h"
 
-int debb_sqrt(int n, int i);
+int debb_sqrt_recursion(int n, int i);
 /**
   * _sqrt_recursion - returns the natural square root of a number
   * @n: number
-  * @debb_sqrt - variable for function
+  * debb_sqrt_recursion: It is used
+  * to find root of the number
   * Return: square root of the number
   */
+
 int _sqrt_recursion(int n)
 {
-	return (debb_sqrt(n, 1));
+	return (debb_sqrt_recursion(n, 1));
 }
 
+int debb_sqrt_recursion(int n, int i);
 /**
-  * new_debb - finds the naturl square
+  * debb_sqrt_recursion - It is used to
+  * find root of the number
   * @n: number
-  * @i: iterats untill..
-  * @debb_sqrt: variable for function
+  * @i: iterats
   * Return: resulting value
   */
-int debb_sqrt(int n, int i)
+int debb_sqrt_recursion(int n, int i)
 {
 	if (i * i > n)
 	{
@@ -31,6 +34,6 @@ int debb_sqrt(int n, int i)
 	}
 	else
 	{
-		return (debb_sqrt(n, i + 1));
+		return (debb_sqrt_recursion(n, i + 1));
 	}
 }
