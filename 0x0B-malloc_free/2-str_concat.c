@@ -18,12 +18,12 @@ char *str_concat(char *s1, char *s2)
 	(s1 = "");
 	if (s2 == NULL)
 	(s2 = "");
-	
+
 	i = k = 0;
 
 	while (s1[i] != '\0')
 	i++;
-	while ( s2[k] != '\0')
+	while (s2[k] != '\0')
 	k++;
 
 	deb = malloc(sizeof(char) * (i + k + 1));
