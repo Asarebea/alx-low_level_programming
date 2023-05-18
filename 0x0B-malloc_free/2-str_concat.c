@@ -15,17 +15,17 @@ char *str_concat(char *s1, char *s2)
 	int i, k;
 
 	if (s1 == NULL)
-	{
-	return (s1 = "");
-	}
+	(s1 = "");
 	if (s2 == NULL)
-	{
-	return (s2 = "");
-	}
+	(s2 = "");
+	
 	i = k = 0;
 
-	for (i = 0; s1[i] != '\0'; i++)
-	for (k = 0; s2[k] != '\0'; k++)
+	while (s1[i] != '\0')
+	i++;
+	while ( s2[k] != '\0')
+	k++;
+
 	deb = malloc(sizeof(char) * (i + k + 1));
 
 	if (deb == NULL)
