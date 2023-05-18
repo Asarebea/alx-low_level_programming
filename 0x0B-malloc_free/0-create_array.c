@@ -3,7 +3,7 @@
 
 /**
  * create_array - entry point
- * Description: creates an array of chars, and
+ * Description: creates an array of chars,
  * initializes it with a specific char
  * @size: array size
  * @c: char to use
@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 	char *str;
 	unsigned int i;
 
-	str = (char *)malloc((size + 1) * sizeof(char));
+	str = (char *)malloc((size) * sizeof(char));
 	if (str == NULL || size <= 0)
 	{
 		return (NULL);
