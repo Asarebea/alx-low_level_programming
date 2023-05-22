@@ -1,4 +1,4 @@
-#ifdef MACROSIZE_H
+#ifndef MACROSIZE_H
 
 #define MACROSIZE_H
 
